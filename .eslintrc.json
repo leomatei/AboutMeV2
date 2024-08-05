@@ -1,3 +1,74 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 50,
+        "semi": false,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid"
+      }
+    ],
+    "no-console": "warn", // Warns on console usage
+    "no-unused-vars": "warn", // Warns on variables that are defined but never used
+    "no-var": "error", // Disallows usage of var
+    "prefer-const": "error", // Suggests using const whenever possible
+    "arrow-spacing": [
+      "error",
+      { "before": true, "after": true }
+    ], // Enforces consistent spacing before and after the arrow in arrow functions
+    "comma-dangle": ["error", "only-multiline"], // Requires or disallows trailing commas
+    "eqeqeq": ["error", "always"], // Enforces the use of === and !==
+    "indent": ["error", 2, { "SwitchCase": 1 }], // Enforces consistent indentation
+    "quotes": ["error", "single"], // Enforces the use of single quotes
+    "semi": ["error", "never"], // Disallows semicolons
+    "space-before-blocks": ["error", "always"], // Enforces consistent spacing before blocks
+    "space-in-parens": ["error", "never"], // Disallows spaces inside parentheses
+    "space-infix-ops": "error", // Requires spacing around infix operators
+    "keyword-spacing": [
+      "error",
+      { "before": true, "after": true }
+    ], // Enforces consistent spacing before and after keywords
+    "react/jsx-boolean-value": ["error", "never"], // Disallows explicitly writing boolean values
+    "react/jsx-curly-spacing": [
+      "error",
+      { "when": "never", "children": true }
+    ], // Enforces or disallows spaces inside of curly braces in JSX attributes and expressions
+    "react/jsx-indent": ["error", 2], // Enforces consistent indentation in JSX
+    "react/jsx-no-duplicate-props": "error", // Disallows duplicate props in JSX
+    "react/jsx-no-undef": "error", // Disallows usage of undefined variables in JSX
+    "react/jsx-sort-props": [
+      "error",
+      { "callbacksLast": true }
+    ], // Enforces props sorting in JSX
+    "react/react-in-jsx-scope": "off" // React 17+ does not require React to be in scope
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
