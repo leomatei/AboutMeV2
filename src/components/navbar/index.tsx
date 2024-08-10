@@ -1,39 +1,9 @@
-import {
-  useState,
-  useEffect,
-  useCallback,
-} from 'react'
-import { debounce } from 'lodash'
+// import { useState, useEffect } from 'react'
+import useScroll from '@/utils/custom-hooks/useScroll'
 import styles from './styles.module.scss'
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false)
-  const handleScrollUp = debounce(() => {
-    if (window.scrollY <= 20) {
-      setScrolled(false)
-    }
-  }, 100)
-
-  const handleScroll = useCallback(() => {
-    if (window.scrollY > 20 && !scrolled) {
-      setScrolled(true)
-    } else if (window.scrollY <= 20 && scrolled) {
-      handleScrollUp()
-    }
-  }, [scrolled, handleScrollUp])
-
-  useEffect(() => {
-    window.addEventListener(
-      'scroll',
-      handleScroll
-    )
-    return () => {
-      window.removeEventListener(
-        'scroll',
-        handleScroll
-      )
-    }
-  }, [handleScroll])
+  const scrolled = useScroll(20, 100)
 
   return (
     <header
