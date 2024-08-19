@@ -29,19 +29,12 @@ export const useScroll = (
 
   const handleScroll = useCallback(() => {
     updateScrollValues()
-
-    if (
-      isAboveThresholdRef.current &&
-      !scrolled
-    ) {
+    if (isAboveThresholdRef.current) {
       setScrolled(true)
-    } else if (
-      !isAboveThresholdRef.current &&
-      scrolled
-    ) {
+    } else {
       handleScrollUp()
     }
-  }, [scrolled, handleScrollUp])
+  }, [handleScrollUp])
 
   useEffect(() => {
     window.addEventListener(

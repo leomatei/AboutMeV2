@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
+import cx from 'classnames'
 
 import styles from './styles.module.scss'
 
@@ -110,11 +111,10 @@ const TechnologiesList: React.FC<TechnologiesListProps> =
         {TECHNOLOGIES.map(item => (
           <div
             key={item.id}
-            className={
-              item.id === selected
-                ? styles.selected
-                : ''
-            }
+            className={cx(styles.icon, {
+              [styles.selected]:
+                item.id === selected,
+            })}
             onClick={() => setSelected(item.id)}
           >
             <Image
