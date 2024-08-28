@@ -16,6 +16,13 @@ import IconRedux from '../../assets/svgs/redux.svg'
 import IconRedis from '../../assets/svgs/redis.svg'
 import IconTailwind from '../../assets/svgs/tailwind.svg'
 import IconDjango from '../../assets/svgs/django.svg'
+import IconGraphQL from '../../assets/svgs/graphql.svg'
+import IconPrisma from '../../assets/svgs/prisma.svg'
+import IconPostgreSQL from '../../assets/svgs/postgresql.svg'
+import IconGCP from '../../assets/svgs/google_cloud.svg'
+import IconSequelize from '../../assets/svgs/sequelizejs.svg'
+import IconMySQL from '../../assets/svgs/mysql.svg'
+import IconDocker from '../../assets/svgs/docker.svg'
 
 interface Technology {
   id: number
@@ -86,18 +93,61 @@ const TECHNOLOGIES: Array<Technology> = [
   },
   {
     id: 9,
+    name: 'GraphQl',
+    logo: IconGraphQL,
+    text: 'GraphQl',
+  },
+  {
+    id: 10,
+    name: 'Prisma',
+    logo: IconPrisma,
+    text: 'Prisma',
+  },
+  {
+    id: 11,
     name: 'Redis',
     logo: IconRedis,
     text: 'Redis',
   },
   {
-    id: 10,
+    id: 12,
+    name: 'PostgreSQL',
+    logo: IconPostgreSQL,
+    text: 'PostgreSQL',
+  },
+  {
+    id: 13,
+    name: 'MySQL',
+    logo: IconMySQL,
+    text: 'MySQL',
+  },
+  {
+    id: 14,
+    name: 'Sequelize',
+    logo: IconSequelize,
+    text: 'Sequelize',
+  },
+  {
+    id: 15,
     name: 'Tailwind',
     logo: IconTailwind,
     text: 'Tailwind',
   },
   {
-    id: 11,
+    id: 16,
+    name: 'Google Cloud Platform',
+    logo: IconGCP,
+    text: 'Google Cloud Platform',
+  },
+  {
+    id: 17,
+    name: 'Docker',
+    logo: IconDocker,
+    text: 'Docker',
+  },
+
+  {
+    id: 18,
     name: 'Django',
     logo: IconDjango,
     text: 'Django',

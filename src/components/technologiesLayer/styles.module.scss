@@ -1,18 +1,23 @@
 .technologiesLayer {
   background: #fff;
   height: 400px;
+  width: calc(100% - 64px);
   margin: 32px;
   padding: 16px;
   border-radius: 8px;
 }
 .icons {
-  height: 80px;
   display: flex;
   justify-content: space-around;
   .icon {
-    margin: 0 2px;
+    margin: 0 8px;
+    padding: 8px;
+    &:hover {
+      background-color: rgb(199, 196, 196);
+    }
   }
 }
 .selected {
-  background-color: grey;
+  border: 3px solid #000;
+  border-radius: 8px 8px 0 0;
 }
