@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './styles.module.scss'
-import ProfilePic from './../../assets/hero-img.jpg'
+import ProfilePic from '@/assets/hero-img.jpg'
 
 const InfoLayer = () => {
   return (

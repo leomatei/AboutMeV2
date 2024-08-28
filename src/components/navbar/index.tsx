@@ -11,7 +11,7 @@ const Header = () => {
         scrolled ? styles.scrolled : ''
       }`}
     >
-      <div className={styles.left}>Leo Matei</div>
+      <h1 className={styles.left}>Leo Matei</h1>
       <div className={styles.right}>
         <button className={styles.button}>
           Technologies

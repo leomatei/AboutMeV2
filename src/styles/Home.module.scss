@@ -9,3 +9,14 @@
   align-items: center;
   background: #000;
 }
+
+.technologiesLayer {
+  background: #fff;
+  height: 400px;
+  width: calc(100% - 64px);
+  margin: 32px auto;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
