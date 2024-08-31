@@ -15,11 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
-
       <main className={styles.main}>
         <InfoLayer />
         <div className={styles.technologiesLayer}>
-          <h2>Skills</h2>
+          <h2>Technologies</h2>
           <Technologieslist />
         </div>
       </main>
