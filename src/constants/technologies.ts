@@ -1,25 +1,26 @@
-import IconJavaScript from '@/assets/svgs/javascript.svg'
-import IconTypeScript from '@/assets/svgs/typescript.svg'
-import IconHTML from '@/assets/svgs/html.svg'
+import IconPHP from '@/assets/svgs/php.svg'
 import IconCSS from '@/assets/svgs/css.svg'
+import IconHTML from '@/assets/svgs/html.svg'
 import IconSCSS from '@/assets/svgs/scss.svg'
-import IconReact from '@/assets/svgs/react.svg'
 import IconNext from '@/assets/svgs/next.svg'
 import IconNode from '@/assets/svgs/node.svg'
+import IconMySQL from '@/assets/svgs/mysql.svg'
+import IconReact from '@/assets/svgs/react.svg'
 import IconRedux from '@/assets/svgs/redux.svg'
 import IconRedis from '@/assets/svgs/redis.svg'
-import IconTailwind from '@/assets/svgs/tailwind.svg'
+import IconNest from '@/assets/svgs/nestjs.svg'
+import IconDrupal from '@/assets/svgs/drupal.svg'
+import IconPrisma from '@/assets/svgs/prisma.svg'
+import IconDocker from '@/assets/svgs/docker.svg'
 import IconDjango from '@/assets/svgs/django.svg'
 import IconGraphQL from '@/assets/svgs/graphql.svg'
-import IconPrisma from '@/assets/svgs/prisma.svg'
-import IconPostgreSQL from '@/assets/svgs/postgresql.svg'
+import IconAngular from '@/assets/svgs/angular.svg'
 import IconGCP from '@/assets/svgs/google_cloud.svg'
+import IconTailwind from '@/assets/svgs/tailwind.svg'
+import IconJavaScript from '@/assets/svgs/javascript.svg'
+import IconTypeScript from '@/assets/svgs/typescript.svg'
+import IconPostgreSQL from '@/assets/svgs/postgresql.svg'
 import IconSequelize from '@/assets/svgs/sequelizejs.svg'
-import IconMySQL from '@/assets/svgs/mysql.svg'
-import IconDocker from '@/assets/svgs/docker.svg'
-import IconPHP from '@/assets/svgs/php.svg'
-import IconDrupal from '@/assets/svgs/drupal.svg'
-import IconNest from '@/assets/svgs/nestjs.svg'
 
 export interface Technology {
   id: number
@@ -181,6 +182,12 @@ export const Nest: Technology = {
   logo: IconNest,
   text: 'NestJS',
 }
+export const Angular: Technology = {
+  id: 22,
+  name: 'Angular',
+  logo: IconAngular,
+  text: 'Angular',
+}
 
 export const TECHNOLOGIES: Array<Technology> = [
   JavaScript,
@@ -205,4 +212,5 @@ export const TECHNOLOGIES: Array<Technology> = [
   PHP,
   Drupal,
   Nest,
+  Angular,
 ]
