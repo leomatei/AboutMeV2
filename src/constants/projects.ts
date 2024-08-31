@@ -94,4 +94,12 @@ export const PROJECTS: Array<Project> = [
     ],
     text: '',
   },
+  {
+    id: 5,
+    name: 'Dear Diary',
+    techStack: ['React,AI,node'],
+    text: '',
+  },
 ]
+
+// maybe add HID
