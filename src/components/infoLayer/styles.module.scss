@@ -1,3 +1,5 @@
+@import '../../constants/constants.scss';
+
 .infoLayer {
   height: 65vh;
   width: 100%;
@@ -5,7 +7,7 @@
   display: flex;
 }
 .text {
-  color: #fff;
+  color: $white;
   width: 82%;
   display: flex;
   align-items: center;
@@ -46,8 +48,16 @@
   height: 100%;
   background: linear-gradient(
     to right,
-    #000,
+    rgba(0, 0, 0, 1) 0%,
     transparent
   );
-  pointer-events: none; /* Allow clicks to pass through the overlay */
+  filter: blur(-1px);
+  pointer-events: none;
+  @media (min-width: 1600px) {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 30%,
+      transparent
+    );
+  }
 }

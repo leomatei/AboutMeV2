@@ -2,19 +2,19 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import cx from 'classnames'
 
-import { TECHNOLOGIES } from '@/constants/technologies'
+import { PROFESIONAL_TECHNOLOGIES } from '@/constants/technologies'
 
 import styles from './styles.module.scss'
 
 const TechnologiesList: React.FC = React.memo(
   () => {
     const [selected, setSelected] = useState(
-      TECHNOLOGIES[0].id
+      PROFESIONAL_TECHNOLOGIES[0].id,
     )
     return (
       <>
         <div className={styles.icons}>
-          {TECHNOLOGIES.map(item => (
+          {PROFESIONAL_TECHNOLOGIES.map(item => (
             <div
               key={item.id}
               className={cx(styles.icon, {
@@ -32,10 +32,15 @@ const TechnologiesList: React.FC = React.memo(
             </div>
           ))}
         </div>
-        <div>{TECHNOLOGIES[selected].text}</div>
+        <div>
+          {
+            PROFESIONAL_TECHNOLOGIES[selected]
+              .text
+          }
+        </div>
       </>
     )
-  }
+  },
 )
 
 TechnologiesList.displayName = 'TechnologiesList'

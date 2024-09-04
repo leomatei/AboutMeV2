@@ -189,28 +189,27 @@ export const Angular: Technology = {
   text: 'Angular',
 }
 
-export const TECHNOLOGIES: Array<Technology> = [
-  JavaScript,
-  TypeScript,
-  HTML,
-  CSS,
-  SCSS,
-  React,
-  Next,
-  Node,
-  Redux,
-  GraphQL,
-  Prisma,
-  Redis,
-  PostgreSQL,
-  MySQL,
-  Sequelize,
-  Tailwind,
-  GoogleCloudPlatform,
-  Docker,
-  Django,
-  PHP,
-  Drupal,
-  Nest,
-  Angular,
-]
+export const PROFESIONAL_TECHNOLOGIES: Array<Technology> =
+  [
+    JavaScript,
+    TypeScript,
+    HTML,
+    CSS,
+    SCSS,
+    React,
+    Next,
+    Node,
+    Redux,
+    GraphQL,
+    Prisma,
+    Redis,
+    PostgreSQL,
+    MySQL,
+    Sequelize,
+    GoogleCloudPlatform,
+    Docker,
+    Django,
+  ]
+
+export const OTHER_TECHNOLOGIES: Array<Technology> =
+  [PHP, Drupal, Nest, Angular, Tailwind]

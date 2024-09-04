@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.scss'
 import Navbar from '@/components/navbar'
 import InfoLayer from '@/components/infoLayer'
 import Technologieslist from '@/components/technologiesList'
+
 export default function Home() {
   return (
     <div className={styles.container}>
