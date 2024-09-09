@@ -15,14 +15,30 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar></Navbar>
-      <main className={styles.main}>
-        <InfoLayer />
-        <div className={styles.technologiesLayer}>
-          <h2>Technologies</h2>
-          <Technologieslist />
-        </div>
-      </main>
+      <Navbar />
+      <div className={styles.container__wrapper}>
+        <div
+          className={
+            styles.container__wrapper__blur
+          }
+        ></div>
+        <main className={styles.main}>
+          <InfoLayer />
+          <section
+            className={styles.technologiesLayer}
+          >
+            <h2>Technologies</h2>
+            <Technologieslist />
+          </section>
+        </main>
+      </div>
+
+      <footer>
+        <p>
+          &copy; 2024 My Personal Website. All
+          rights reserved.
+        </p>
+      </footer>
     </div>
   )
 }
