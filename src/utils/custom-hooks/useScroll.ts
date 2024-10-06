@@ -9,22 +9,25 @@ import { debounce } from '../debounce'
 
 export const useScroll = (
   threshold: number = 20,
-  delay: number = 100
-) => {
+  delay: number = 100,
+  element?: HTMLElement | null,
+): boolean => {
   const [scrolled, setScrolled] = useState(false)
   const scrollPositionRef = useRef(0)
   const isAboveThresholdRef = useRef(false)
 
   const updateScrollValues = () => {
-    scrollPositionRef.current = window.scrollY
+    const scrollY =
+      element?.scrollTop ?? window.scrollY
+    scrollPositionRef.current = scrollY
     isAboveThresholdRef.current =
-      window.scrollY > threshold
+      scrollY > threshold
   }
 
   const handleScrollUp = useMemo(
     () =>
       debounce(() => setScrolled(false), delay),
-    [delay]
+    [delay],
   )
 
   const handleScroll = useCallback(() => {
@@ -34,20 +37,23 @@ export const useScroll = (
     } else {
       handleScrollUp()
     }
-  }, [handleScrollUp])
+  }, [handleScrollUp, element, threshold])
 
   useEffect(() => {
-    window.addEventListener(
+    const targetElement = element || window
+
+    targetElement.addEventListener(
       'scroll',
-      handleScroll
+      handleScroll,
     )
+
     return () => {
-      window.removeEventListener(
+      targetElement.removeEventListener(
         'scroll',
-        handleScroll
+        handleScroll,
       )
     }
-  }, [handleScroll])
+  }, [handleScroll, element])
 
   return scrolled
 }

@@ -1,21 +1,37 @@
 .icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  );
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 8px;
   width: 100%;
-  height: 75px;
+
   margin-top: 16px;
   overflow-y: visible;
   overflow-x: scroll;
-  // scroll bar setting to hide on all browsers
-  /* Hide the scrollbar in WebKit browsers (Chrome, Safari) */
+  @media (max-width: 1187px) {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(80px, 1fr)
+    );
+    gap: 10px;
+  }
+  @media (max-width: 511px) {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(60px, 1fr)
+    );
+    gap: 10px;
+  }
   &::-webkit-scrollbar {
     display: none;
   }
-  /* Hide the scrollbar in Firefox */
   scrollbar-width: none;
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
   .icon {
     flex-shrink: 0;
     margin: 0 4px;

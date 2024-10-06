@@ -3,8 +3,10 @@ import styles from '@/styles/Home.module.scss'
 import Navbar from '@/components/navbar'
 import InfoLayer from '@/components/infoLayer'
 import Technologieslist from '@/components/technologiesList'
+import ProjectsList from '@/components/projectsList'
 
 export default function Home() {
+  // need to work for responsive design
   return (
     <div className={styles.container}>
       <Head>
@@ -30,15 +32,9 @@ export default function Home() {
             <h2>Technologies</h2>
             <Technologieslist />
           </section>
+          <ProjectsList />
         </main>
       </div>
-
-      <footer>
-        <p>
-          &copy; 2024 My Personal Website. All
-          rights reserved.
-        </p>
-      </footer>
     </div>
   )
 }

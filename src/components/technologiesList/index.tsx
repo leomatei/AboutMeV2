@@ -9,7 +9,7 @@ import styles from './styles.module.scss'
 const TechnologiesList: React.FC = React.memo(
   () => {
     const [selected, setSelected] = useState(
-      PROFESIONAL_TECHNOLOGIES[0].id,
+      PROFESIONAL_TECHNOLOGIES[0],
     )
     return (
       <>
@@ -19,9 +19,9 @@ const TechnologiesList: React.FC = React.memo(
               key={item.id}
               className={cx(styles.icon, {
                 [styles.selected]:
-                  item.id === selected,
+                  item.id === selected.id,
               })}
-              onClick={() => setSelected(item.id)}
+              onClick={() => setSelected(item)}
             >
               <Image
                 src={item.logo}
@@ -32,12 +32,7 @@ const TechnologiesList: React.FC = React.memo(
             </div>
           ))}
         </div>
-        <div>
-          {
-            PROFESIONAL_TECHNOLOGIES[selected]
-              .text
-          }
-        </div>
+        <div>{selected.text}</div>
       </>
     )
   },

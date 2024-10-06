@@ -28,6 +28,7 @@ export interface Technology {
   name: string
   text?: string
 }
+// add skill level and links to projects
 
 export const JavaScript: Technology = {
   id: 0,
@@ -196,20 +197,22 @@ export const PROFESIONAL_TECHNOLOGIES: Array<Technology> =
     HTML,
     CSS,
     SCSS,
+    PHP,
+    Drupal,
     React,
-    Next,
-    Node,
     Redux,
     GraphQL,
+    Django,
+    Node,
+    Nest, // add express
+    Sequelize,
     Prisma,
     Redis,
     PostgreSQL,
     MySQL,
-    Sequelize,
     GoogleCloudPlatform,
     Docker,
-    Django,
   ]
 
 export const OTHER_TECHNOLOGIES: Array<Technology> =
-  [PHP, Drupal, Nest, Angular, Tailwind]
+  [Next, Angular, Tailwind]
