@@ -1,5 +1,6 @@
 import IconPHP from '@/assets/svgs/php.svg'
 import IconCSS from '@/assets/svgs/css.svg'
+import IconNPM from '@/assets/svgs/npm.svg'
 import IconHTML from '@/assets/svgs/html.svg'
 import IconSCSS from '@/assets/svgs/scss.svg'
 import IconNext from '@/assets/svgs/next.svg'
@@ -12,7 +13,10 @@ import IconNest from '@/assets/svgs/nestjs.svg'
 import IconDrupal from '@/assets/svgs/drupal.svg'
 import IconPrisma from '@/assets/svgs/prisma.svg'
 import IconDocker from '@/assets/svgs/docker.svg'
+import IconOpenAI from '@/assets/svgs/openai.svg'
 import IconDjango from '@/assets/svgs/django.svg'
+import IconPython from '@/assets/svgs/python.svg'
+import IconMariaDB from '@/assets/svgs/mariadb.svg'
 import IconGraphQL from '@/assets/svgs/graphql.svg'
 import IconAngular from '@/assets/svgs/angular.svg'
 import IconGCP from '@/assets/svgs/google_cloud.svg'
@@ -21,14 +25,14 @@ import IconJavaScript from '@/assets/svgs/javascript.svg'
 import IconTypeScript from '@/assets/svgs/typescript.svg'
 import IconPostgreSQL from '@/assets/svgs/postgresql.svg'
 import IconSequelize from '@/assets/svgs/sequelizejs.svg'
+import IconSquareSpace from '@/assets/svgs/squarespace.svg'
 
 export interface Technology {
   id: number
   logo: string
   name: string
-  text?: string
+  text: string
 }
-// add skill level and links to projects
 
 export const JavaScript: Technology = {
   id: 0,
@@ -183,11 +187,54 @@ export const Nest: Technology = {
   logo: IconNest,
   text: 'NestJS',
 }
+
 export const Angular: Technology = {
   id: 22,
   name: 'Angular',
   logo: IconAngular,
   text: 'Angular',
+}
+
+export const GoogleMapReact: Technology = {
+  id: 23,
+  name: 'GoogleMapReact',
+  logo: IconNPM,
+  text: 'GoogleMapReact',
+}
+
+export const MariaDB: Technology = {
+  id: 24,
+  name: 'MariaDB',
+  logo: IconMariaDB,
+  text: 'MariaDB',
+}
+
+export const Python: Technology = {
+  id: 25,
+  name: 'Python',
+  logo: IconPython,
+  text: 'Python',
+}
+
+export const SquareSpace: Technology = {
+  id: 26,
+  name: 'SquareSpace',
+  logo: IconSquareSpace,
+  text: 'SquareSpace',
+}
+
+export const Zwibbler = {
+  id: 27,
+  name: 'Zwibbler',
+  logo: IconNPM,
+  text: 'Zwibbler',
+}
+
+export const OpenAI = {
+  id: 28,
+  name: 'OpenAI',
+  logo: IconOpenAI,
+  text: 'OpenAI',
 }
 
 export const PROFESIONAL_TECHNOLOGIES: Array<Technology> =
@@ -215,4 +262,10 @@ export const PROFESIONAL_TECHNOLOGIES: Array<Technology> =
   ]
 
 export const OTHER_TECHNOLOGIES: Array<Technology> =
-  [Next, Angular, Tailwind]
+  [
+    Next,
+    Angular,
+    Tailwind,
+    GoogleMapReact,
+    MariaDB,
+  ]

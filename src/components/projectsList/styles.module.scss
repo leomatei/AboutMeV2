@@ -1,8 +1,18 @@
 .projects_list {
-  background-color: #000;
-  width: calc(100% - 64px);
-  margin: auto 32px;
+  background-color: #9a6aff;
+  width: 100%;
+  padding: 16px 40px;
+  color: #ffffff;
   h2 {
-    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  div {
+    h3 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+    }
   }
 }

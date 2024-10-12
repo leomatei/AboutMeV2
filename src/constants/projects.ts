@@ -19,13 +19,20 @@ import {
   GoogleCloudPlatform,
   JavaScript,
   CSS,
+  GoogleMapReact,
+  MariaDB,
+  Python,
+  SquareSpace,
+  Zwibbler,
+  OpenAI,
 } from '@/constants/technologies'
 
-interface Project {
+export interface Project {
   id: number
   name: string
-  techStack: Array<Technology | string>
-  text: string
+  techStack: Array<Technology>
+  shortDescription: string
+  longDescription: string
 }
 
 export const PROJECTS: Array<Project> = [
@@ -40,11 +47,11 @@ export const PROJECTS: Array<Project> = [
       SCSS,
       Nest,
       Docker,
-      'Google Map React',
-      'MariaDB',
-      'DocumentDB',
+      GoogleMapReact,
+      MariaDB,
     ],
-    text: '',
+    shortDescription: 'LA Parks',
+    longDescription: 'LA Parks',
   },
   {
     id: 1,
@@ -58,7 +65,10 @@ export const PROJECTS: Array<Project> = [
       MySQL,
       Prisma,
     ],
-    text: '',
+    shortDescription:
+      'Video meetings for elderly people',
+    longDescription:
+      'Video meetings for elderly people',
   },
   {
     id: 2,
@@ -71,17 +81,19 @@ export const PROJECTS: Array<Project> = [
       Redux,
       Redis,
     ],
-    text: '',
+    shortDescription: 'School management System',
+    longDescription: 'School management System',
   },
   {
     id: 3,
     name: 'Scraper for LinkedIn',
     techStack: [
-      'Python',
+      Python,
       Django,
       GoogleCloudPlatform,
     ],
-    text: '',
+    shortDescription: 'Scraper for LinkedIn',
+    longDescription: 'Scraper for LinkedIn',
   },
   {
     id: 4,
@@ -89,16 +101,18 @@ export const PROJECTS: Array<Project> = [
     techStack: [
       JavaScript,
       CSS,
-      'Zwibler',
-      'SquareSpace',
+      Zwibbler,
+      SquareSpace,
     ],
-    text: '',
+    shortDescription: 'LGBT blog',
+    longDescription: 'LGBT blog',
   },
   {
     id: 5,
     name: 'Dear Diary',
-    techStack: ['React,AI,node'],
-    text: '',
+    techStack: [React, Node, OpenAI],
+    shortDescription: 'Dear Diary',
+    longDescription: 'Dear Diary',
   },
 ]
 

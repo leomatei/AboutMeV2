@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   &__wrapper {
     position: relative;
     display: flex;
@@ -61,7 +60,6 @@
       }
       .technologiesLayer {
         background: $white;
-        min-height: 200px;
         height: fit-content;
         width: calc(100% - 64px);
         margin: 32px auto;
