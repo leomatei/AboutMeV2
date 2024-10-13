@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Image from 'next/image'
 import MoreDetails from '@/assets/svgs/moredetails.svg'
 import { Project } from '@/constants/projects'
@@ -11,6 +12,7 @@ export const ProjectComponent: React.FC<
   shortDescription = '',
   longDescription = '',
 }) => {
+  const [showMore, setShowMore] = useState(false)
   return (
     <div key={id} className={styles.project}>
       <div className={styles.project__header}>
@@ -34,15 +36,35 @@ export const ProjectComponent: React.FC<
           </div>
         ))}
       </div>
-      <p>
-        <span>More details...</span>
+      {!showMore && (
+        <p
+          className={styles.project__details}
+          onClick={() => setShowMore(true)}
+        >
+          <span>More details...</span>
 
-        <Image
-          src={MoreDetails}
-          alt="more details"
-        />
-      </p>
-      {/* short description then technologies then longdescription */}
+          <Image
+            src={MoreDetails}
+            alt="more details"
+          />
+        </p>
+      )}
+      {showMore && (
+        <div>
+          <div>{longDescription}</div>
+          <p
+            className={styles.project__details}
+            onClick={() => setShowMore(false)}
+          >
+            <span>Less details...</span>
+
+            <Image
+              src={MoreDetails}
+              alt="more details"
+            />
+          </p>
+        </div>
+      )}
     </div>
   )
 }

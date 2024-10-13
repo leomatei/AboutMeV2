@@ -1,5 +1,8 @@
 .project {
   margin: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 4px;
   &__header {
     display: flex;
     p {
@@ -21,5 +24,10 @@
         margin-right: 8px;
       }
     }
+  }
+  &__details {
+    display: flex;
+    cursor: pointer;
+    width: fit-content;
   }
 }

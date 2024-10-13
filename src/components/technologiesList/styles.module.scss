@@ -11,8 +11,6 @@
   width: 100%;
 
   margin-top: 16px;
-  overflow-y: visible;
-  overflow-x: scroll;
   @media (max-width: 1187px) {
     grid-template-columns: repeat(
       auto-fit,
