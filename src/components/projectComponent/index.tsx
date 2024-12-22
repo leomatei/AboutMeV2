@@ -8,15 +8,20 @@ export const ProjectComponent: React.FC<
 > = ({
   id = 0,
   name = '',
+  displayName = '',
   techStack = [],
   shortDescription = '',
   longDescription = '',
 }) => {
   const [showMore, setShowMore] = useState(false)
   return (
-    <div key={id} className={styles.project}>
+    <div
+      id={`project_${name}`}
+      key={id}
+      className={styles.project}
+    >
       <div className={styles.project__header}>
-        <p>{name}</p>
+        <p>{displayName}</p>
       </div>
       <p>{shortDescription}</p>
       <div className={styles.project__techStack}>
@@ -32,7 +37,7 @@ export const ProjectComponent: React.FC<
               src={tech.logo}
               alt={tech.name}
             />
-            <b>{tech.text}</b>
+            <b>{tech.name}</b>
           </div>
         ))}
       </div>

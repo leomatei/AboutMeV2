@@ -6,7 +6,6 @@ import Technologieslist from '@/components/technologiesList'
 import ProjectsList from '@/components/projectsList'
 
 export default function Home() {
-  // need to work for responsive design
   return (
     <div className={styles.container}>
       <Head>

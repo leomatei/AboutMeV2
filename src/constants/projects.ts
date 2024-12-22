@@ -30,15 +30,17 @@ import {
 export interface Project {
   id: number
   name: string
+  displayName: string
   techStack: Array<Technology>
   shortDescription: string
   longDescription: string
 }
 
-export const PROJECTS: Array<Project> = [
+export const WORK_PROJECTS: Array<Project> = [
   {
     id: 0,
-    name: 'LA Parks',
+    name: 'la_parks',
+    displayName: 'LA Parks',
     techStack: [
       PHP,
       Drupal,
@@ -55,7 +57,9 @@ export const PROJECTS: Array<Project> = [
   },
   {
     id: 1,
-    name: 'Video meetings for elderly people',
+    name: 'agora',
+    displayName:
+      'Video meetings for elderly people',
     techStack: [
       React,
       Node,
@@ -72,7 +76,8 @@ export const PROJECTS: Array<Project> = [
   },
   {
     id: 2,
-    name: 'School management System',
+    name: 'ed_tech',
+    displayName: 'School management System',
     techStack: [
       React,
       Node,
@@ -86,7 +91,8 @@ export const PROJECTS: Array<Project> = [
   },
   {
     id: 3,
-    name: 'Scraper for LinkedIn',
+    name: 'windfall',
+    displayName: 'Scraper for LinkedIn',
     techStack: [
       Python,
       Django,
@@ -97,7 +103,8 @@ export const PROJECTS: Array<Project> = [
   },
   {
     id: 4,
-    name: 'LGBT blog',
+    name: 'lgbt_blog',
+    displayName: 'LGBT blog',
     techStack: [
       JavaScript,
       CSS,
@@ -107,13 +114,16 @@ export const PROJECTS: Array<Project> = [
     shortDescription: 'LGBT blog',
     longDescription: 'LGBT blog',
   },
-  {
-    id: 5,
-    name: 'Dear Diary',
-    techStack: [React, Node, OpenAI],
-    shortDescription: 'Dear Diary',
-    longDescription: 'Dear Diary',
-  },
 ]
+export const HACKATHON_PROJECT = {
+  id: 5,
+  name: 'hackathon',
+  displayName: 'Dear Diary',
+  techStack: [React, Node, OpenAI],
+  shortDescription: 'Dear Diary',
+  longDescription: 'Dear Diary',
+}
+
+export const PERSONAL_PROJECTS = []
 
 // maybe add HID

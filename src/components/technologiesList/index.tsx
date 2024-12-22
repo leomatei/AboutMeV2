@@ -32,7 +32,11 @@ const TechnologiesList: React.FC = React.memo(
             </div>
           ))}
         </div>
-        <div>{selected.text}</div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: selected.text,
+          }}
+        />
       </>
     )
   },

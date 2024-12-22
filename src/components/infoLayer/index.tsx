@@ -7,10 +7,15 @@ const InfoLayer = () => {
     <div className={styles.infoLayer}>
       <div className={styles.text}>
         <p>
-          Versatile FullStack Developer,
-          enthusiastic about expanding my skill
-          set with new technologies and taking on
-          diverse challenges within IT industry.
+          Over 3 years experience working as a
+          FullStack Developer using React.js and
+          Node.js, specializing in building
+          dynamic and responsive front-end
+          experiences.
+          <br />
+          Trying to expand my skill set with new
+          technologies and taking on diverse
+          challenges within IT industry.
         </p>
       </div>
       <div className={styles.fadeImageContainer}>

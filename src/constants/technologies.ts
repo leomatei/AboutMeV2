@@ -38,14 +38,24 @@ export const JavaScript: Technology = {
   id: 0,
   name: 'JavaScript',
   logo: IconJavaScript,
-  text: 'JavaScript',
+  text: `<div>
+      <p>
+        Over 4 years of professional experoience with
+        JavaScript, used on almost every project.
+      </p>
+      <p>
+        I have experience with both vanilla
+        JavaScript(<a href='#project_lgbt_blog'>See this project</a>) and modern frameworks like
+        React, Angular and Vue.
+      </p>
+    </div>`,
 }
 
 export const TypeScript: Technology = {
   id: 1,
   name: 'TypeScript',
   logo: IconTypeScript,
-  text: 'TypeScript',
+  text: '1 year of experience with TypeScript, used for Nest.js.',
 }
 
 export const HTML: Technology = {
