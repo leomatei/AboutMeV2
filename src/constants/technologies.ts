@@ -38,17 +38,17 @@ export const JavaScript: Technology = {
   id: 0,
   name: 'JavaScript',
   logo: IconJavaScript,
-  text: `<div>
-      <p>
-        Over 4 years of professional experoience with
+  text: `<p>
+      <span>
+        Over 4 years of experience with
         JavaScript, used on almost every project.
-      </p>
-      <p>
+      </span>
+      <span>
         I have experience with both vanilla
         JavaScript(<a href='#project_lgbt_blog'>See this project</a>) and modern frameworks like
         React, Angular and Vue.
-      </p>
-    </div>`,
+      </span>
+    </p>`,
 }
 
 export const TypeScript: Technology = {
@@ -62,28 +62,36 @@ export const HTML: Technology = {
   id: 2,
   name: 'HTML',
   logo: IconHTML,
-  text: 'HTML',
+  text: '4 years of experience with HTML. Used on almost every project.',
 }
 
 export const CSS: Technology = {
   id: 3,
   name: 'CSS',
   logo: IconCSS,
-  text: 'CSS',
+  text: `<div>
+  <span4 years of experience with CSS. </span>
+  <span>Used global CSS and inline CSS on SquareSpace(<a href='#project_lgbt_blog'>See this project</a>).</span>
+  <p>Used CSS injector on Drupal7(<a href='#project_la_parks'>See this project</a>).</p>
+  </div>
+  `,
 }
 
 export const SCSS: Technology = {
   id: 4,
   name: 'SCSS',
   logo: IconSCSS,
-  text: 'SCSS',
+  text: '4 years of experience with SCSS. Used on almost every project.',
 }
 
 export const React: Technology = {
   id: 5,
   name: 'React',
   logo: IconReact,
-  text: 'React',
+  text: `<p>
+  <span>Over 3 years of experience with React, used on various projects.</span>
+  <span>Used various hooks such as useReducer, useRef, and created custom hooks. Optimize performance with React.memo, useMemo, and useCallback.</span>
+  </p>`,
 }
 
 export const Next: Technology = {
@@ -97,119 +105,127 @@ export const Node: Technology = {
   id: 7,
   name: 'Node',
   logo: IconNode,
-  text: 'Node',
+  text: `<p>
+  <span>Over 3 years of experience with Node.js.</span>
+  <span>Used various approaches suck as: express.js apps, Nest.js apps, RESTAPIs, GraphQL, middlewares, Swagger for API Docs, JWT, session stored tokens, login using google OAuth2, Cron jobs.</span>
+  </p>`,
 }
 
 export const Redux: Technology = {
   id: 8,
   name: 'Redux',
   logo: IconRedux,
-  text: 'Redux',
+  text: `<p>
+      <span>Used Redux for state management on various projects.</span>
+      <span>Used reducers, slicers and Redux Toolkit Query for API caching.</span>
+      <span>Used Redux Thunk for async actions.</span>
+      <span>Used Redux Devtools for debugging.</span>
+    </p>`,
 }
 
 export const GraphQL: Technology = {
   id: 9,
   name: 'GraphQL',
   logo: IconGraphQL,
-  text: 'GraphQL',
+  text: 'Over 2 years working with GraphQL with Appolo Client and Server.',
 }
 
 export const Prisma: Technology = {
   id: 10,
   name: 'Prisma',
   logo: IconPrisma,
-  text: 'Prisma',
+  text: 'Over 2 years working with Prisma ORM.',
 }
 
 export const Redis: Technology = {
   id: 11,
   name: 'Redis',
   logo: IconRedis,
-  text: 'Redis',
+  text: 'Used Redis for caching and storing some data from costly operations.',
 }
 
 export const PostgreSQL: Technology = {
   id: 12,
   name: 'PostgreSQL',
   logo: IconPostgreSQL,
-  text: 'PostgreSQL',
+  text: 'Over 2 years working with PostgreSQL, used for better support for complex queries and transactions for concurent requests.',
 }
 
 export const MySQL: Technology = {
   id: 13,
   name: 'MySQL',
   logo: IconMySQL,
-  text: 'MySQL',
+  text: 'Over 3 years of experinece using mySQL, used for various projects.',
 }
 
 export const Sequelize: Technology = {
   id: 14,
   name: 'Sequelize',
   logo: IconSequelize,
-  text: 'Sequelize',
+  text: 'Over 2 years working with Sequelize ORM, used for managing PostgreSQL table structures and migrations.',
 }
 
 export const Tailwind: Technology = {
   id: 15,
   name: 'Tailwind',
   logo: IconTailwind,
-  text: 'Tailwind',
+  text: 'Used Tailwind CSS for basic styles.',
 }
 
 export const GoogleCloudPlatform: Technology = {
   id: 16,
   name: 'Google Cloud Platform',
   logo: IconGCP,
-  text: 'Google Cloud Platform',
+  text: 'Used GCP for reading and writting cloud stored files',
 }
 
 export const Docker: Technology = {
   id: 17,
   name: 'Docker',
   logo: IconDocker,
-  text: 'Docker',
+  text: 'Used docker for running multiple containers',
 }
 
 export const Django: Technology = {
   id: 18,
   name: 'Django',
   logo: IconDjango,
-  text: 'Django',
+  text: '1 year of using Django framework, including command line actions, RESTAPI server and using libraries such as SimpleJWT',
 }
 
 export const PHP: Technology = {
   id: 19,
   name: 'PHP',
   logo: IconPHP,
-  text: 'PHP',
+  text: 'Over 1 year of experience with PHP 7 and 8',
 }
 
 export const Drupal: Technology = {
   id: 20,
   name: 'Drupal',
   logo: IconDrupal,
-  text: 'Drupal',
+  text: 'Over 1 year of experience with Drupal 8 and Drupal 10, creating pages using Twig templates.',
 }
 
 export const Nest: Technology = {
   id: 21,
   name: 'NestJS',
   logo: IconNest,
-  text: 'NestJS',
+  text: 'Over 1 year of experience using NestJS.',
 }
 
 export const Angular: Technology = {
   id: 22,
   name: 'Angular',
   logo: IconAngular,
-  text: 'Angular',
+  text: 'Used Angular for Personal Projects.',
 }
 
 export const GoogleMapReact: Technology = {
   id: 23,
   name: 'GoogleMapReact',
   logo: IconNPM,
-  text: 'GoogleMapReact',
+  text: 'Used GoogleMapReact for displaying maps and highlight locations.',
 }
 
 export const MariaDB: Technology = {
@@ -223,28 +239,28 @@ export const Python: Technology = {
   id: 25,
   name: 'Python',
   logo: IconPython,
-  text: 'Python',
+  text: 'Used Python for simple projects, LinkedIn Scrapper(link) and machine learning experiemts with pandas and numpy',
 }
 
 export const SquareSpace: Technology = {
   id: 26,
   name: 'SquareSpace',
   logo: IconSquareSpace,
-  text: 'SquareSpace',
+  text: 'Wortked with SquareSpace to create a static blog.',
 }
 
 export const Zwibbler = {
   id: 27,
   name: 'Zwibbler',
   logo: IconNPM,
-  text: 'Zwibbler',
+  text: 'Create a Paint web app using Zwibbler library.',
 }
 
 export const OpenAI = {
   id: 28,
   name: 'OpenAI',
   logo: IconOpenAI,
-  text: 'OpenAI',
+  text: 'Using APIs from OpenAI to generate text.',
 }
 
 export const PROFESIONAL_TECHNOLOGIES: Array<Technology> =

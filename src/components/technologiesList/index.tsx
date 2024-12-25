@@ -32,11 +32,16 @@ const TechnologiesList: React.FC = React.memo(
             </div>
           ))}
         </div>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: selected.text,
-          }}
-        />
+        <h3 className={styles.technolgy__title}>
+          {selected.name}
+        </h3>
+        <div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: selected.text,
+            }}
+          />
+        </div>
       </>
     )
   },
