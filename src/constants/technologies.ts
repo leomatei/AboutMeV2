@@ -141,21 +141,21 @@ export const Redis: Technology = {
   id: 11,
   name: 'Redis',
   logo: IconRedis,
-  text: 'Used Redis for caching and storing some data from costly operations.',
+  text: 'Used Redis for caching and storing data from costly operations.',
 }
 
 export const PostgreSQL: Technology = {
   id: 12,
   name: 'PostgreSQL',
   logo: IconPostgreSQL,
-  text: 'Over 2 years working with PostgreSQL, used for better support for complex queries and transactions for concurent requests.',
+  text: 'Over 2 years working with PostgreSQL, which offers better support for complex queries and transactions for concurrent requests.',
 }
 
 export const MySQL: Technology = {
   id: 13,
   name: 'MySQL',
   logo: IconMySQL,
-  text: 'Over 3 years of experinece using mySQL, used for various projects.',
+  text: 'Over 3 years of experience using MySQL, utilized in various projects.',
 }
 
 export const Sequelize: Technology = {
@@ -169,14 +169,14 @@ export const Tailwind: Technology = {
   id: 15,
   name: 'Tailwind',
   logo: IconTailwind,
-  text: 'Used Tailwind CSS for basic styles.',
+  text: 'Used Tailwind CSS for styling components efficiently.',
 }
 
 export const GoogleCloudPlatform: Technology = {
   id: 16,
   name: 'Google Cloud Platform',
   logo: IconGCP,
-  text: 'Used GCP for reading and writting cloud stored files',
+  text: 'Experience with Google Cloud Platform for reading and writing files stored in cloud.',
 }
 
 export const Docker: Technology = {

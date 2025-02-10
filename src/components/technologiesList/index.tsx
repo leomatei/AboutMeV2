@@ -35,7 +35,7 @@ const TechnologiesList: React.FC = React.memo(
         <h3 className={styles.technolgy__title}>
           {selected.name}
         </h3>
-        <div>
+        <div className={styles.technolgy__text}>
           <div
             dangerouslySetInnerHTML={{
               __html: selected.text,

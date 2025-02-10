@@ -3,6 +3,7 @@ import Image from 'next/image'
 import MoreDetails from '@/assets/svgs/moredetails.svg'
 import { Project } from '@/constants/projects'
 import styles from './styles.module.scss'
+
 export const ProjectComponent: React.FC<
   Project
 > = ({
@@ -23,7 +24,11 @@ export const ProjectComponent: React.FC<
       <div className={styles.project__header}>
         <p>{displayName}</p>
       </div>
-      <p>{shortDescription}</p>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: shortDescription,
+        }}
+      />
       <div className={styles.project__techStack}>
         {techStack.map(tech => (
           <div
@@ -33,7 +38,7 @@ export const ProjectComponent: React.FC<
             }
           >
             <Image
-              height={32}
+              height={20}
               src={tech.logo}
               alt={tech.name}
             />
@@ -56,7 +61,11 @@ export const ProjectComponent: React.FC<
       )}
       {showMore && (
         <div>
-          <div>{longDescription}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: longDescription,
+            }}
+          />
           <p
             className={styles.project__details}
             onClick={() => setShowMore(false)}

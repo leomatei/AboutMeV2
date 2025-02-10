@@ -57,9 +57,21 @@
   }
 }
 
-.technolgy__title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 0;
-  margin-top: 16px;
+.technolgy {
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 16px;
+  }
+  &__text {
+    height: 4.5rem;
+    div {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+      margin: 0;
+      margin-top: 16px;
+    }
+  }
 }

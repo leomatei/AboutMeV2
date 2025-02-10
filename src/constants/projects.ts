@@ -50,9 +50,9 @@ export const WORK_PROJECTS: Array<Project> = [
       Nest,
       Docker,
       GoogleMapReact,
-      MariaDB,
     ],
-    shortDescription: 'LA Parks',
+    shortDescription:
+      'Web project to centralize information about parks in LA. Built using the Drupal content management system(CMS), an iframe pointing to a React App. Use a separate admin panel for resources and syncing databases.',
     longDescription: 'LA Parks',
   },
   {
